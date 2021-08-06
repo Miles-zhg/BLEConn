@@ -45,7 +45,7 @@ export function getBlooth() {
 							console.log(err, 'searchBlooth1')
 							reject(err)
 						})
-					}, 5000)
+					}, 20000)
 				}).catch(err => {
 					console.log(err, 'DeviceFound1')
 					reject(err)
@@ -605,18 +605,6 @@ function sleep(delay) {
 
 // 其他转换方法
 //16进制字符串转 ArrayBuffer
-hexToArrayBuffer = (hex) => {
-return new Uint8Array(
-	hex.match(/[\da-f]{2}/gi).map((byte) => {
-	return parseInt(byte, 16)
-	})
-).buffer
-}
-  
-//ArrayBuffer类型数据转为16进制字符串
-bufToHex = (buffer) => {
-return Array.prototype.map.call(new Uint8Array(buffer), (x) => ('00' + x.toString(16)).slice(-2)).join('')
-}
 
 
 

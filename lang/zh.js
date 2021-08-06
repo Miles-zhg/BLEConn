@@ -45,7 +45,7 @@ export default {
 			offlineOrOther: '设备离线或异常',
 			outLine: '设备不在线',
 			setting1: '设置中',
-			BLEList: '查询蓝牙列表',
+			BLEList: '查询蓝牙列表测试',
 			BLEConn: '蓝牙列表(点击连接设备)',
 			BLENone: '暂无蓝牙设备',
 			search: '搜索中',
